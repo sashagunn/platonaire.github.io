@@ -156,3 +156,19 @@ ul li, ol li {
         margin: 10px auto;
     }
 }
+/* Logo */
+.logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 32px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 28px;
+  }
+}
