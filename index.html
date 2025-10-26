@@ -91,13 +91,17 @@
     <h2>Free Analysis</h2>
     <p>Fill out the form — we’ll reach out in minutes</p>
 
-    <form action="https://formspree.io/f/xpwowljr" method="POST" class="lead-form">
-      <input type="text" name="full_name" placeholder="Full Name" required>
-      <input type="email" name="email" placeholder="E-mail" required>
-      <input type="tel" name="phone" placeholder="Phone number" required>
+    <form action="https://formspree.io/f/xpwowljr" method="POST" id="lead-form">
+  <input type="hidden" name="_subject" value="📌 New Lead - Platonaire">
+  <input type="hidden" name="_language" value="en">
+  <input type="hidden" name="_next" value="https://sashagunn.github.io/platonaire.github.io/thanks.html">
 
-      <button type="submit" class="primary-btn">Send Request ✅</button>
-    </form>
+  <input type="text" name="full_name" placeholder="Full Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="tel" name="phone" placeholder="Phone" required>
+
+  <button type="submit" class="primary-btn">Submit ✅</button>
+</form>
 
     <p class="legal-note">Your data is securely transmitted & used only for consultation.</p>
   </div>
