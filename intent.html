@@ -1,49 +1,65 @@
 <!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>Choose Intent — Platonaire</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Analysis — Platonaire</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-lang="en">
+<body data-lang="ru">
 
 <header class="header">
     <div class="container">
-        <div class="logo"><a href="index.html">PLATONAIRE</a></div>
-        <a href="tel:+18182690416" class="call-btn">📞 Call Us</a>
+        <div class="logo-text">
+            <a href="index.html"><img src="img/logo.svg" alt="PLATONAIRE" class="logo-img"></a>
+        </div>
+        <div style="display:flex; gap:14px; align-items:center;">
+            <a href="intent.html" class="btn secondary">ENG/RU</a>
+            <a href="tel:+18182690416" class="call-btn">📞 Call Us</a>
+        </div>
     </div>
 </header>
 
-<section class="intent">
-    <div class="container">
-        <h1 data-ru="С чем вам помочь?">What do you need help with?</h1>
+<section class="container" style="padding:60px 0;">
+    <h1 class="headline" data-ru="Бесплатный анализ" data-en="Free Analysis">Бесплатный анализ</h1>
+    <p class="subtext" style="max-width:550px;">
+        Оставьте краткую информацию, и наш менеджер свяжется с вами в ближайшее время.
+    </p>
 
-        <div class="intent-options">
+    <form action="mailto:platonairellc@gmail.com"
+          method="POST"
+          enctype="text/plain"
+          style="max-width:550px; margin:0 auto; font-size:18px;">
 
-            <a href="smartcredit.html" class="btn primary" data-ru="Улучшить кредитный профиль">
-                Improve my profile
-            </a>
+        <label>Имя *
+            <input type="text" name="Имя" required placeholder="Ваше имя">
+        </label>
 
-            <a href="smartcredit.html" class="btn primary" data-ru="Подобрать кредитные карты">
-                Get card approvals
-            </a>
+        <label>Телефон *
+            <input type="text" name="Телефон" required placeholder="+1 (XXX) XXX-XXXX">
+        </label>
 
-            <a href="smartcredit.html" class="btn primary" data-ru="И то, и другое">
-                Both
-            </a>
+        <label>Коротко о задаче
+            <textarea name="Заявка" rows="4" placeholder="Напишите проблему или цель"></textarea>
+        </label>
 
+        <div style="margin-top:20px;">
+            <button type="submit" class="btn primary" style="width:100%;">Отправить заявку</button>
         </div>
-    </div>
+    </form>
+
+    <p style="opacity:.7; margin-top:25px; font-size:14px; text-align:center;">
+        Мы не предоставляем кредитный ремонт, а только помощь в анализе и подборе финансовых продуктов.<br>
+        Вся работа ведётся в соответствии с FCRA.
+    </p>
 </section>
 
 <footer class="footer">
-    <div class="container small">
-        © 2025 Platonaire LLC — <a href="index.html">Home</a>
+    <div class="container">
+        © 2025 Platonaire LLC — All Rights Reserved
     </div>
 </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
