@@ -27,27 +27,33 @@
         Оставьте краткую информацию, и наш менеджер свяжется с вами в ближайшее время.
     </p>
 
-    <form action="mailto:platonairellc@gmail.com"
-          method="POST"
-          enctype="text/plain"
-          style="max-width:550px; margin:0 auto; font-size:18px;">
+    <form action="https://formsubmit.co/platonairellc@gmail.com"
+      method="POST"
+      style="max-width:550px; margin:0 auto; font-size:18px;">
 
-        <label>Имя *
-            <input type="text" name="Имя" required placeholder="Ваше имя">
-        </label>
+    <!-- Required to disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
 
-        <label>Телефон *
-            <input type="text" name="Телефон" required placeholder="+1 (XXX) XXX-XXXX">
-        </label>
+    <!-- Redirect after submit -->
+    <input type="hidden" name="_next" value="https://sashagunn.github.io/platonaire.github.io/thanks.html">
 
-        <label>Коротко о задаче
-            <textarea name="Заявка" rows="4" placeholder="Напишите проблему или цель"></textarea>
-        </label>
+    <label>Full Name *
+        <input type="text" name="Full Name" required placeholder="John Smith">
+    </label>
 
-        <div style="margin-top:20px;">
-            <button type="submit" class="btn primary" style="width:100%;">Отправить заявку</button>
-        </div>
-    </form>
+    <label>Email *
+        <input type="email" name="Email" required placeholder="your@email.com">
+    </label>
+
+    <label>Phone *
+        <input type="text" name="Phone" required placeholder="+1 (XXX) XXX-XXXX">
+    </label>
+
+    <div style="margin-top:20px;">
+        <button type="submit" class="btn primary" style="width:100%;">Submit</button>
+    </div>
+</form>
+
 
     <p style="opacity:.7; margin-top:25px; font-size:14px; text-align:center;">
         Мы не предоставляем кредитный ремонт, а только помощь в анализе и подборе финансовых продуктов.<br>
