@@ -1,182 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>Platonaire – No Magic, Just Results</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platonaire — Credit Assistance</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-<body data-lang="en">
 
-<header class="header">
-    <div class="container">
+<body>
 
-        <!-- LOGO placeholder (replace later with image) -->
-        <div class="logo-text">
-  <a href="index.html"><img src="img/logo.svg" alt="PLATONAIRE" class="logo-img"></a>
-</div>
+<header>
+    <div class="container header-container">
+        <div class="logo">PLATONAIRE</div>
 
-        <!-- RIGHT SIDE: phone + language -->
-        <div style="display: flex; gap: 14px; align-items: center;">
-            <div class="lang-switch">
-                <a class="btn secondary" data-lang="en">EN</a>
-                <a class="btn secondary" data-lang="ru">RU</a>
-            </div>
-
-            <a href="tel:+18182690416" class="call-btn">📞 Call Us</a>
-        </div>
-
+        <nav class="header-nav">
+            <a href="tel:+18182690416" class="btn-call">📞 Call Us</a>
+        </nav>
     </div>
 </header>
 
 
-<section class="hero">
-    <div class="container">
-
-        <h1 class="headline"
-            data-ru="Помогаем получить одобрение кредитных карт"
-            data-en="We help you get credit card approvals">
-            We help you get credit card approvals
-        </h1>
-
-        <p class="subtext"
-            data-ru="Без обещаний чудес. Только умный анализ кредитного отчёта и сопровождение."
-            data-en="No magic — Just smart analysis and guided support.">
-            No magic — Just smart analysis and guided support.
-        </p>
-
-        <div class="cta-buttons">
-            <a class="btn primary"
-               href="smartcredit.html"
-               data-ru="Отправить отчёт"
-               data-en="Send my report">
-               Send my report
-            </a>
-
-            <a class="btn secondary"
-               href="intent.html"
-               data-ru="Бесплатный анализ"
-               data-en="Free analysis">
-               Free analysis
-            </a>
-        </div>
-
-    </div>
-</section>
-
-<section class="services">
-    <div class="container">
-        <h2 data-ru="Что мы делаем">What we do</h2>
-
-        <ul>
-            <li data-ru="Анализ кредитной истории — выявляем спорные и потенциально ошибочные записи.">
-                Credit history analysis — identifying disputable or inaccurate entries.
-            </li>
-            <li data-ru="Поддержка в подготовке документов и подаче обоснованных споров в бюро.">
-                Assistance with documentation and filing legal disputes.
-            </li>
-            <li data-ru="Подбор кредитных карт с наивысшей вероятностью одобрения.">
-                Credit card matching with highest approval odds.
-            </li>
-            <li data-ru="Сопровождение и обучение на каждом шаге.">
-                Support and coaching at every step.
-            </li>
-        </ul>
-    </div>
-</section>
-
-<section id="lead-form" class="lead-form-section">
-  <div class="container">
-    <h2>Free Analysis</h2>
-    <p>Fill out the form — we’ll reach out in minutes</p>
-
+<section id="lead-form" class="lead-form-top">
     <form id="leadForm" action="https://formspree.io/f/xpwowljr" method="POST">
-      <input type="hidden" name="_subject" value="📌 New Lead – Platonaire">
-        
-      <input type="text" name="full_name" placeholder="Full Name" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <input type="tel" name="phone" placeholder="Phone" required>
+        <input type="hidden" name="_subject" value="New Lead — Platonaire">
+        <input type="hidden" name="_language" value="ru">
 
-      <button type="submit" class="primary-btn">Submit ✅</button>
+        <h3>Бесплатный анализ</h3>
+        <p class="form-desc">Оставьте информацию — мы свяжемся с вами в ближайшее время</p>
+
+        <input type="text" name="full_name" placeholder="Имя и Фамилия" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
+
+        <button type="submit" class="primary-btn">Отправить</button>
     </form>
-
-    <script>
-      document.getElementById("leadForm").addEventListener("submit", async function(e) {
-        e.preventDefault();
-        const form = e.target;
-
-        let response = await fetch(form.action, {
-          method: form.method,
-          body: new FormData(form),
-          headers: { 'Accept': 'application/json' }
-        });
-
-        if (response.ok) {
-          window.location.href = "https://sashagunn.github.io/thanks.html";
-        } else {
-          alert("Error sending form. Please try again.");
-        }
-      });
-    </script>
-
-    <p class="legal-note">Your data is securely transmitted & used only for consultation.</p>
-  </div>
 </section>
 
 
-<section class="social-proof">
+<section class="section-block">
     <div class="container">
-        <h2 data-ru="Почему нам доверяют">Why clients trust us</h2>
+        <h2>У вас есть кредитный отчёт?</h2>
+        <p>Прикрепите и получите анализ через 5 минут</p>
 
-        <ul>
-            <li data-ru="1000+ клиентов по США">
-                1,000+ clients across the U.S.
-            </li>
-            <li data-ru="Юридическая поддержка и работа по FCRA">
-                Legal support and FCRA-compliant
-            </li>
-            <li data-ru="Прозрачные процессы и отчётность">
-                Transparent processes and reporting
-            </li>
-            <li data-ru="Поддержка на каждом шаге">
-                Guided support every step
-            </li>
+        <div class="send-options">
+            <a href="https://smartcredit.com" class="btn-outline" target="_blank">SmartCredit — Login</a>
+            <a href="https://identityiq.com" class="btn-outline" target="_blank">IdentityIQ — Login</a>
+            <a href="https://t.me/PlatonaireBot" class="btn-outline">Помощь в Telegram</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-block dark">
+    <div class="container">
+        <h2>Что мы делаем</h2>
+        <ul class="list">
+            <li>Определяем спорные и ошибочные записи</li>
+            <li>Готовим документы и подаем споры</li>
+            <li>Подбор карт с высокой вероятностью одобрения</li>
+            <li>Поддержка и сопровождение на каждом шаге</li>
         </ul>
     </div>
 </section>
 
-<footer class="footer">
+
+<section class="section-block">
     <div class="container">
-        <p style="font-weight: 700; font-size: 17px;">
-            Platonaire LLC
-        </p>
+        <h2>Почему нам доверяют</h2>
+        <ul class="list">
+            <li>1,000+ клиентов в США</li>
+            <li>Поддержка и работа по FCRA</li>
+            <li>Прозрачные процессы и отчётность</li>
+            <li>Помощь каждый шаг</li>
+        </ul>
+    </div>
+</section>
 
-        <p style="color: #cccccc;">
-            805 University Ave, Rocklin, CA 95765<br>
-            <a href="tel:+18182690416">+1 (818) 269-0416</a> &nbsp;•&nbsp;
-            <a href="mailto:platonairellc@gmail.com">platonairellc@gmail.com</a>
-        </p>
 
-        <p class="legal-note">
-            <small>
-                We do not provide credit repair services or extend credit.<br>
-                All assistance follows FCRA guidelines.
-            </small>
-        </p>
-
-        <p style="margin-top: 12px;">
-            <a href="docs/privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
-            <a href="docs/terms.html">Terms of Service</a>
-        </p>
-
-        <p style="margin-top: 8px; font-size: 13px; opacity: .7;">
-            © 2025 Platonaire LLC — All Rights Reserved
-        </p>
+<footer>
+    <div class="container">
+        <p class="foot-title">Platonaire LLC</p>
+        <p>805 University Ave, Rocklin, CA 95765</p>
+        <p><a href="tel:+18182690416">+1 (818) 269-0416</a> — <a href="mailto:platonairellc@gmail.com">platonairellc@gmail.com</a></p>
+        <p class="legal">Мы не предоставляем кредитный ремонт. Работа ведётся в соответствии с FCRA.</p>
+        <p class="copy">© 2025 Platonaire LLC — All Rights Reserved</p>
     </div>
 </footer>
 
 
-<script src="js/main.js"></script>
+<script>
+    document.getElementById("leadForm").addEventListener("submit", async function(e) {
+        e.preventDefault();
+        const form = e.target;
+
+        let response = await fetch(form.action, {
+            method: form.method,
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+            window.location.href = "https://sashagunn.github.io/platonaire.github.io/thanks.html";
+        } else {
+            alert("Ошибка, попробуйте ещё раз");
+        }
+    });
+</script>
+
 </body>
 </html>
