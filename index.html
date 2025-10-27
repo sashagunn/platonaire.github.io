@@ -28,37 +28,30 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="container" style="display:grid;grid-template-columns:1fr;max-width:680px;">
-      <h1 data-ru="Исправим вашу кредитную историю"
-          data-en="We’ll fix your credit profile">
-        Исправим вашу кредитную историю
-      </h1>
+    <div class="hero-content">
+        <div class="hero-left">
+            <h1>Исправим вашу кредитную историю</h1>
+            <p>БЫСТРО. ЗАКОННО. БЕЗ ЛИШНЕГО СТРЕССА. Оставляйте заявку — мы обязательно вам поможем!</p>
 
-      <p class="subtitle" data-ru="БЫСТРО. ЗАКОННО. БЕЗ ЛИШНЕГО СТРЕССА. Оставляйте заявку — мы обязательно вам поможем!"
-         data-en="FAST. LEGAL. STRESS-FREE. Leave a request — we’ll help you!">
-         БЫСТРО. ЗАКОННО. БЕЗ ЛИШНЕГО СТРЕССА. Оставляйте заявку — мы обязательно вам поможем!
-      </p>
+            <form id="leadForm" action="https://formspree.io/f/xpwowljr" method="POST">
+                <input type="text" name="name" placeholder="Ваше полное имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <button type="submit" class="btn-primary">Бесплатная консультация</button>
 
-      <!-- Лид-форма -->
-      <form id="leadForm" class="hero-form" action="https://formspree.io/f/xpwowljr" method="POST">
-        <input type="hidden" name="_subject" value="📌 New Lead – Platonaire" />
-        <input type="text" name="full_name"
-               data-ru-placeholder="Ваше полное имя" data-en-placeholder="Full Name"
-               placeholder="Ваше полное имя" required />
-        <input type="tel" name="phone"
-               data-ru-placeholder="Телефон" data-en-placeholder="Phone"
-               placeholder="Телефон" required />
-        <button type="submit" class="btn-primary"
-          data-ru="Бесплатная консультация" data-en="Free consultation">
-          Бесплатная консультация
-        </button>
-      </form>
+                <div class="form-secure">
+                    <span>✅ Данные защищены</span>
+                </div>
+            </form>
+        </div>
 
-      <div class="secure-info">
-        ✅&nbsp;<span data-ru="Данные защищены" data-en="Your data is secure">Данные защищены</span>
-      </div>
+        <div class="hero-right">
+            <div class="hero-placeholder">
+                <span>Тут будет логотип</span>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
+
 
   <!-- Что мы делаем -->
   <section class="section-what">
