@@ -1,228 +1,170 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Исправим вашу кредитную историю — Platonaire</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="icon" href="../img/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Исправим кредитную историю — Platonaire</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/accordion.js"></script>
 </head>
 
 <body>
-  <!-- HEADER (тёмный) -->
-  <header class="header dark-header">
+
+<header class="header">
     <div class="container header-container">
-      <div class="logo">
-        <a href="./index.html" aria-label="Platonaire — На главную">
-          <img src="../img/logo.svg" alt="PLATONAIRE" />
-        </a>
-      </div>
-      <div class="header-actions">
-        <a href="../en/index.html" class="lang-btn">EN</a>
-        <a href="tel:+18182690416" class="call-btn">📞 +1 (818) 269-0416</a>
-      </div>
+        <div class="logo">
+            <img src="../img/logo.svg" alt="PLATONAIRE">
+        </div>
+        <div class="header-actions">
+            <a href="../en/index.html" class="lang-btn">EN</a>
+            <a href="tel:+18182690416" class="call-btn">+1 (818) 269-0416</a>
+        </div>
     </div>
-  </header>
+</header>
 
-  <!-- HERO -->
-  <section class="hero">
+<section class="hero">
     <div class="container hero-container">
-      <div class="hero-content">
-        <h1>Исправим вашу<br />кредитную историю</h1>
-        <p class="subtitle">
-          БЫСТРО. ЗАКОННО. БЕЗ ЛИШНЕГО СТРЕССА.<br />
-          Оставляйте заявку — мы обязательно поможем!
-        </p>
+        <div class="hero-content">
+            <h1>Исправим вашу кредитную историю</h1>
+            <p class="subtitle">БЫСТРО. ЗАКОННО. БЕЗ ЛИШНЕГО СТРЕССА.<br>
+            Оставляйте заявку — и мы обязательно вам поможем!</p>
 
-        <!-- ФОРМА (Formspree → email, редирект на свой thanks) -->
-        <form id="leadForm" action="https://formspree.io/f/xpwowljr" method="POST">
-          <input type="hidden" name="_subject" value="📌 Заявка с сайта Platonaire" />
-          <input type="hidden" name="_language" value="ru" />
-          <input type="hidden" name="_replyto" value="platonairellc@gmail.com" />
+            <form action="https://formspree.io/f/yourkey" method="POST" id="leadForm">
+                <input type="text" name="fullname" placeholder="Ваше полное имя" required>
+                <input type="text" name="phone" placeholder="Телефон" required>
+                <button type="submit" class="primary-btn hero-btn">Бесплатная консультация</button>
+                <p class="secure-note">✅ Данные защищены</p>
+            </form>
+        </div>
 
-          <input type="text" name="full_name" placeholder="Ваше полное имя" required />
-          <input type="tel" name="phone" placeholder="Телефон" required />
-
-          <button type="submit" class="primary-btn">Бесплатная консультация</button>
-          <p class="secure-note">✅ Данные защищены</p>
-        </form>
-      </div>
-
-      <!-- Заглушка под лого (позже вставим SVG головы) -->
-      <div class="hero-image">
-        <div class="hero-logo-placeholder">PLATONAIRE<br/><span>БЕЗ МАГИИ — ТОЛЬКО РЕЗУЛЬТАТ</span></div>
-      </div>
+        <div class="hero-side">
+            <p class="side-tag">PLATONAIRE<br>БЕЗ МАГИИ — ТОЛЬКО РЕЗУЛЬТАТ</p>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- ЧТО МЫ ДЕЛАЕМ -->
-  <section class="section-features">
-    <div class="container">
-      <h2>Что мы делаем?</h2>
+<section class="section-features">
+    <div class="container centered">
+        <h2>Что мы делаем?</h2>
 
-      <div class="features-grid">
-        <div class="feature-card">
-          <strong>Анализ</strong>
-          <p>Кредитного профиля и факторов одобрения</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Анализ</h3>
+                <p>Кредитного профиля и факторов одобрения</p>
+                <a href="#leadForm" class="primary-btn small">Получить консультацию</a>
+            </div>
+            <div class="feature-card">
+                <h3>Споры с бюро</h3>
+                <p>Выявление неточностей и подготовка корректных законных обращений</p>
+                <a href="#leadForm" class="primary-btn small">Получить консультацию</a>
+            </div>
+            <div class="feature-card">
+                <h3>Подбор карт и лимитов</h3>
+                <p>С вероятностью одобрения более 92%</p>
+                <a href="#leadForm" class="primary-btn small">Получить консультацию</a>
+            </div>
         </div>
-        <div class="feature-card">
-          <strong>Споры с бюро</strong>
-          <p>Выявление неточностей и подготовка корректных законных обращений</p>
-        </div>
-        <div class="feature-card">
-          <strong>Подбор карт и лимитов</strong>
-          <p>С вероятностью одобрения более 92%</p>
-        </div>
-      </div>
-
-      <a href="#leadForm" class="primary-btn center-btn">Получить консультацию</a>
     </div>
-  </section>
+</section>
 
-  <!-- НАШИ УСЛУГИ -->
-  <section class="section-services">
-    <div class="container">
-      <h2>Наши услуги</h2>
-      <p class="lead">
-        Повышаем рейтинг, увеличиваем стаж и подготавливаем вас к крупным кредитным решениям
-      </p>
+<section class="section-services">
+    <div class="container centered">
+        <h2>Наши услуги</h2>
+        <p class="lead">Повышаем рейтинг, увеличиваем стаж<br> и подготавливаем вас к крупным кредитным решениям</p>
 
-      <div class="services-block">
-        <div class="service-card">
-          <strong>Анализ кредитной истории</strong>
-          <p>Подробный анализ вашей кредитной истории с выявлением проблемных зон и рекомендациями по их исправлению.</p>
+        <!-- ACCORDION -->
+        <div class="accordion">
+            
+            <div class="acc-item">
+                <button class="acc-title">Анализ кредитной истории</button>
+                <div class="acc-content">
+                    <p>Подробный анализ вашей кредитной истории с выявлением проблемных зон и рекомендациями по их исправлению.</p>
+                </div>
+            </div>
+
+            <div class="acc-item">
+                <button class="acc-title">Удаление негативной информации</button>
+                <div class="acc-content">
+                    <p>Inquiries — проверки кредитной истории.<br>
+                    Late Payments — просрочки по платежам.<br>
+                    Collections — переданные коллектору долги.<br>
+                    Charge Off — списанные как невозвратные.</p>
+                </div>
+            </div>
+
+            <div class="acc-item">
+                <button class="acc-title">Повышение кредитного рейтинга</button>
+                <div class="acc-content">
+                    <p>Разработка плана по повышению рейтинга, включая добавление положительных записей и кредитных линий.</p>
+                </div>
+            </div>
+
+            <div class="acc-item">
+                <button class="acc-title">Финансовое планирование</button>
+                <div class="acc-content">
+                    <p>Если из-за рейтинга вы не можете взять ипотеку
+                    или автокредит — мы подберём маршрут улучшений.</p>
+                </div>
+            </div>
+
+            <div class="acc-item">
+                <button class="acc-title">Подготовка к получению кредита</button>
+                <div class="acc-content">
+                    <p>AI анализирует профиль и заранее прогнозирует вероятность одобрения и лимиты.</p>
+                </div>
+            </div>
+
+            <div class="acc-item">
+                <button class="acc-title">Консультации по финансовой грамотности</button>
+                <div class="acc-content">
+                    <p>Научим эффективно управлять кредитами и финансами.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section-preapprove dark">
+    <div class="container centered">
+        <h2>Pre-Approval Service</h2>
+        <p>Наш AI анализирует ваш отчёт и предлагает продукты с самой высокой вероятностью одобрения — без лишних hard inquiries.</p>
+
+        <div class="pre-cards">
+            <span>✅ FNBO — 92% match</span>
+            <span>✅ Amex — 86% match</span>
+            <span>🔘 Capital One — 74% match</span>
         </div>
 
-        <div class="service-card">
-          <strong>Удаление негативной информации</strong>
-          <p>
-            <em>Inquiries</em> — проверки кредитной истории.<br/>
-            <em>Late Payments</em> — просрочки по платежам.<br/>
-            <em>Collections</em> — переданные коллектору долги.<br/>
-            <em>Charge Off</em> — списанные как невозвратные.
-          </p>
+        <a href="#leadForm" class="primary-btn gold-btn">Узнать, как подать безопасно</a>
+    </div>
+</section>
+
+<section class="section-report">
+    <div class="container centered">
+        <h2>У вас уже есть кредитный отчёт?</h2>
+        <p>Прикрепите PDF (все страницы, все бюро)<br> — и получите бесплатную консультацию.</p>
+
+        <div class="report-buttons">
+            <a href="#" class="report-btn">SmartCredit — Login</a>
+            <a href="#" class="report-btn">IdentityIQ — Login</a>
+            <a href="#" class="report-btn">Бот помощник в Telegram</a>
         </div>
-
-        <div class="service-card">
-          <strong>Boost Credit Score</strong>
-          <p>Добавление положительных authorized user tradelines (счета с длительной историей и высокими лимитами).</p>
-        </div>
-
-        <div class="service-card">
-          <strong>Повышение кредитного рейтинга</strong>
-          <p>Разработка плана по повышению рейтинга, включая добавление положительных записей и кредитных линий.</p>
-        </div>
-
-        <div class="service-card">
-          <strong>Финансовое планирование</strong>
-          <p>
-            Из-за рейтинга не можете взять ипотеку или автокредит на выгодных условиях? Мы подберём маршрут улучшений.
-          </p>
-        </div>
-
-        <div class="service-card">
-          <strong>Подготовка к получению кредита</strong>
-          <p>
-            Наша система (AI) анализирует 42 параметра кредитного профиля и подбирает банки с максимально высокой
-            вероятностью одобрения. Мы не просто делаем “pre-approval check” — мы прогнозируем результат с точностью до 90%.
-          </p>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- PRE-APPROVAL (чёрно-золотой) -->
-  <section class="section-preapprove">
-    <div class="container">
-      <h2>Pre-Approval Service</h2>
-      <p class="pre-lead">
-        Наш AI анализирует ваш отчёт и предлагает продукты с наивысшей вероятностью одобрения и оптимальными лимитами — без лишних hard inquiries.
-      </p>
-
-      <div class="pre-cards">
-        <div class="pre-card">✅ FNBO — 92% match</div>
-        <div class="pre-card">✅ Amex — 86% match</div>
-        <div class="pre-card">🟡 Capital One — 74% match</div>
-      </div>
-
-      <a class="primary-btn gold-btn" href="./preapproval.html">Узнать, как подать безопасно (без hard inquiry)</a>
-      <p class="small-note">Переход на воронку №3</p>
+<section class="section-cta">
+    <div class="container centered">
+        <h2>Пора исправить то, что мешает вам двигаться вперёд</h2>
+        <a href="#leadForm" class="primary-btn">Оставить заявку</a>
     </div>
-  </section>
+</section>
 
-  <!-- ОТЧЁТ -->
-  <section class="section-report">
-    <div class="container">
-      <h2>У вас уже есть кредитный отчёт?</h2>
-      <p>Прикрепите PDF (все страницы, все бюро) — и получите бесплатную консультацию.</p>
+<footer class="footer">
+    <p>Platonaire LLC — 805 University Ave, Rocklin, CA 95765</p>
+    <p><a href="mailto:platonairellc@gmail.com">platonairellc@gmail.com</a> — +1 (818) 269-0416</p>
+    <p class="legal">© 2025 Platonaire LLC — All Rights Reserved</p>
+</footer>
 
-      <div class="report-buttons">
-        <a class="report-btn" href="./report.html#smartcredit">SmartCredit — Login</a>
-        <a class="report-btn" href="./report.html#identityiq">IdentityIQ — Login</a>
-        <a class="report-btn" href="https://t.me/PlatonaireBot" target="_blank">Бот помощник в Telegram</a>
-      </div>
-
-      <p class="small-note">Переход на воронку №2</p>
-    </div>
-  </section>
-
-  <!-- ПОЧЕМУ ДОВЕРЯЮТ -->
-  <section class="section-trust">
-    <div class="container">
-      <h2>Почему нам доверяют</h2>
-      <ul class="trust-list">
-        <li>1 000+ клиентов по США</li>
-        <li>Работа строго по FCRA и действующему законодательству</li>
-        <li>Прозрачные расчёты вероятности и понятные шаги</li>
-        <li>Личная поддержка и напоминания в Telegram</li>
-      </ul>
-
-      <div class="reviews">
-        <div class="review">★★★★★ “Быстро помогли и объяснили все шаги”</div>
-        <div class="review">★★★★★ “Pre-approval сработал — дали карту и лимит выше ожиданий”</div>
-        <div class="review">★★★★★ “Профессионально и без пустых обещаний”</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section-cta">
-    <div class="container">
-      <h2>Пора исправить то, что мешает вам двигаться вперёд</h2>
-      <p>Заполните короткую форму — и мы свяжемся с вами уже сегодня</p>
-      <a href="#leadForm" class="primary-btn center-btn">Оставить заявку</a>
-    </div>
-  </section>
-
-  <!-- FOOTER (тёмный) -->
-  <footer class="footer dark-footer">
-    <div class="container">
-      <p class="legal">
-        Мы не обещаем удаление корректных записей. Вся работа ведётся в соответствии с FCRA. Рекомендации являются
-        информационными и не гарантируют результат в каждом отдельном случае.
-      </p>
-      <p>Platonaire LLC — 805 University Ave, Rocklin, CA 95765</p>
-      <p><a href="tel:+18182690416">+1 (818) 269-0416</a> — <a href="mailto:platonairellc@gmail.com">platonairellc@gmail.com</a></p>
-      <p>© 2025 Platonaire LLC — All Rights Reserved</p>
-    </div>
-  </footer>
-
-  <!-- Принудительный редирект на свою thanks после Formspree -->
-  <script>
-    (function () {
-      const form = document.getElementById('leadForm');
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { 'Accept': 'application/json' }
-        }).finally(function () {
-          // project pages путь подтверждён тобой:
-          window.location.href = '/platonaire.github.io/ru/thanks.html';
-        });
-      });
-    })();
-  </script>
 </body>
 </html>
