@@ -250,3 +250,51 @@ footer {
     font-size: 36px;
   }
 }
+.hero {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-left {
+    flex: 1;
+    max-width: 550px;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-placeholder {
+    width: 360px;
+    height: 360px;
+    background: #e8ecf7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8691a5;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-right {
+        order: -1;
+    }
+}
