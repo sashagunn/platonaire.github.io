@@ -115,3 +115,41 @@ section h2{font-size:32px;text-align:center;margin-bottom:50px}
   .services-block{grid-template-columns:1fr}
   .why-cards{grid-template-columns:1fr}
 }
+/* =========================
+   HEADER DARK
+========================= */
+.header {
+    background: #0D1B2A !important;
+    border-bottom: 1px solid rgba(212, 175, 55, .25);
+}
+
+.logo img {
+    filter: brightness(0) saturate(100%) invert(84%) sepia(59%) saturate(431%) hue-rotate(358deg) brightness(99%) contrast(95%);
+}
+
+.lang-btn, .call-btn {
+    background: transparent !important;
+    border: 1px solid #D4AF37 !important;
+    color: #D4AF37 !important;
+}
+
+.lang-btn:hover, .call-btn:hover {
+    background: rgba(212, 175, 55, .1) !important;
+}
+
+/* =========================
+   FOOTER DARK
+========================= */
+.footer {
+    background: #0D1B2A !important;
+    border-top: 1px solid rgba(212, 175, 55, .25) !important;
+    color: #E8E8E8 !important;
+}
+
+.footer a {
+    color: #D4AF37 !important;
+}
+
+.footer .legal {
+    color: #AAB4C2 !important;
+}
